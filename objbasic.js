@@ -21,3 +21,16 @@ function countobjprop(obj){
     return Object.keys(obj).length;
 }
 console.log(countobjprop(person));
+//Create an object car with properties brand, model, and year. 
+// Write a method getDetails() that returns a string like "Toyota Corolla - 2020"
+const car={
+    Brand:"BMW",
+    Model:"X5",
+    Year:2022,
+   getDetails: function(){
+    return `${this.Brand} ${this.Model}-${this.Year}`;
+}
+
+};
+console.log(car.getDetails());
+
