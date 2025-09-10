@@ -13,3 +13,6 @@ console.log(isAgePropertyFound); // Output: true
 
 const isCountryPropertyFound = 'country' in obj;
 console.log(isCountryPropertyFound); // Output: false
+
+const isCityPropertyFound='city' in obj;
+console.log(isCityPropertyFound);
