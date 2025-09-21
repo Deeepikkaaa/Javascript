@@ -4,4 +4,4 @@ let obj2 = {b:3, c:4};
 
 let obj3={...obj1,...obj2};
 console.log(obj3);
-// Expected output: {a:1, b:3, c:4}
+// output: {a:1, b:3, c:4}
