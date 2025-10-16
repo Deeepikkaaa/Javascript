@@ -6,6 +6,7 @@ let changetext= document.querySelector(".chngbtn");
 let addelem=document.querySelector(".addelem");
 let rmvelem=document.querySelector(".rmvelem");
 let chngcolor=document.querySelector(".chngcolor");
+let input=document.querySelector(".input");
 
 function showmsg(){
     console.log("Text Changed");
@@ -32,3 +33,21 @@ rmvelem.addEventListener(("click"),()=>{
 chngcolor.addEventListener(("click"),()=>{
     para.style.color="Green";
 })
+
+//2nd day
+//adding event listners to input
+input.addEventListener("change",()=>{
+   console.log("change-",input.value);
+});
+
+
+input.addEventListener("input",()=>{
+  console.log("Input-",input.value)
+  })
+input.addEventListener("keyup",()=>{
+  console.log("keyup-",input.value)
+  })
+
+input.addEventListener("focus",()=>{
+  console.log("Focus-",input.value)
+  })
