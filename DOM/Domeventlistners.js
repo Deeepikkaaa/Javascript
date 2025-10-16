@@ -51,3 +51,17 @@ input.addEventListener("keyup",()=>{
 input.addEventListener("focus",()=>{
   console.log("Focus-",input.value)
   })
+
+  //Mouse events
+  input.addEventListener("mousedown",(event)=>{
+    console.log("Mousedown-",event.button);
+  })
+
+  //applying mouse events for whole body
+  document.body.addEventListener("mousedown",(event)=>{
+    let xcod=event.clientX;
+    let ycod=event.clientY;
+    let cods=`X cod-${xcod}, Y cod -${ycod}`;
+    console.log(cors);
+  });
+
