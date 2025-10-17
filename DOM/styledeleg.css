@@ -1,0 +1,35 @@
+
+body{
+    text-align: center;
+    font-size: medium;
+    font-family: monospace;
+    font-style: oblique;
+    transition: all;
+}
+.container{
+    color:rgba(106, 159, 8, 0.915);
+    margin-top:60px ;
+
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    border: 4px;
+    border-radius: 6px;
+    cursor:grab;
+    font-size: 16px;
+    color: rgb(15, 115, 203);
+}
+.dark{
+background-color: black;
+color: aliceblue;
+}
+
+.blue{
+    background-color: blue;
+    color: antiquewhite;
+}
+.reset { background-color: #777; }
+.light { background-color: #ccc; color: #000; }
+
