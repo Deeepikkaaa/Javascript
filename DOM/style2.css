@@ -1,0 +1,19 @@
+.card-container {
+  width: 350px;
+  height: 450px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.image {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  object-fit: cover;
+  text-shadow: #ccc;
+  
+}
