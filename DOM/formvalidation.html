@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <form id="formvalidation">
+            <input type="text" id="input" placeholder="Enter something">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <script>
+             let form = document.getElementById("formvalidation");
+            let submit=document.getElementById("submit");
+            let input=document.getElementById("input");
+             
+            form.addEventListener("submit",(e)=>{
+                e.preventDefault();
+                if(input.value.trim()===""){
+                alert("Form cannot be empty!");
+            } else {
+                alert("Form submitted successfully!");
+            }
+                
+
+            });
+
+        </script>
+    </body>
+</html>
