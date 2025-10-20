@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Dynamic Content</title>
+    </head>
+    <body>
+        <div id="addlist">
+            <h2>Dynamic Content</h2>
+            <button id="newitem">Add New Item</button>
+        </div>
+        <script>
+            let addlist=document.getElementById("addlist");
+            addlist.addEventListener("click",()=>{
+                let li=document.createElement("div");
+                li.textContent="New Item Added";
+                document.body.appendChild(li);
+            })
+        </script>
+    </body>
+</html>
