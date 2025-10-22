@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+<body>
+    <h2>Window Object</h2>
+    
+    <button onclick="showCurrentURL()">Show Current URL</button>
+    <button onclick="openGoogle()">Open Google</button>
+    <button onclick="myAlert()">Alert</button>
+    <button onclick="showConfirm()">Confirm</button>
+    <button onclick="myPrompt()">Prompt</button>
+    <button>Navigator</button>
+    <button>History</button>
+    <button onclick="showLocation()">Location</button>
+    <button onclick="screenInfo()">Screen Info</button>
+
+    <script>
+        function myAlert() {
+            alert("Hi, this is an alert!");
+        }
+
+        function showLocation() {
+            alert(window.location.href); // Shows only URL
+        }
+
+        function showCurrentURL() {
+            alert("Current URL: " + window.location.href);
+        }
+
+        function myPrompt() {
+            let result = prompt("What is your permanent address?");
+            if (result === "Nepal") {
+                alert("You are Nepali!");
+            } else {
+                alert("You are not Nepali!");
+            }
+        }
+
+        function openGoogle() {
+            let userConfirm = confirm("Do you want to visit Google?");
+            if (userConfirm) {
+                window.location.href = "https://www.google.com";
+            }
+        }
+
+        function showConfirm() {
+            let res = confirm("Are you sure?");
+            if (res === true) {
+                alert("Let's go then!");
+            }
+        }
+
+        function screenInfo() {
+            alert(`Screen width: ${screen.width}, height: ${screen.height}`);
+        }
+    </script>
+</body>
+</html>
